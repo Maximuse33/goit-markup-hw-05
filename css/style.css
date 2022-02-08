@@ -87,6 +87,17 @@ span {
 }
 .header-list .current {
   color: var(--selection-color);
+  position: relative;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--selection-color);
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
